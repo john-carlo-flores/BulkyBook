@@ -17,5 +17,11 @@ namespace BulkyBookWeb.Controllers
             var objCategoryList = _db.Categories.ToList();
             return View(objCategoryList);
         }
+
+        //GET
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
